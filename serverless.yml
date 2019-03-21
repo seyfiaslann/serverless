@@ -1,0 +1,14 @@
+service: serverless
+provider:
+  name: aws
+  project: Serverless sample
+  owner: devops
+  region: eu-west-1
+  runtime: nodejs6.10
+  timeout: 30
+
+functions:
+  hello:
+    handler: src/hello.handler
+    events:
+      - http: GET hello
