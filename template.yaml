@@ -19,8 +19,12 @@ Resources:
       Events:
 
         HelloApi:
-          # Define an API Gateway endpoint that responds to HTTP GET at /thumbnail
+          # Define an API Gateway endpoint that responds to HTTP GET at /hello
           Type: Api
           Properties:
             Path: /hello
             Method: GET
+
+      Environment:
+        Variables:
+          secret_variable: XXXXX
