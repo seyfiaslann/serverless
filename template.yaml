@@ -24,7 +24,3 @@ Resources:
           Properties:
             Path: /hello
             Method: GET
-
-      Environment:
-        Variables:
-          secret_variable: XXXXX
